@@ -7,16 +7,25 @@ Este projeto é uma página web simples que simula formulários de login e cadas
 🖥️ Tecnologias Utilizadas:
 
 -> HTML5;
+
 -> CSS3;
+
 -> JavaScript Nativo;
+
 -> Projeto com Responsividade Nativa (@media screen).
 
+
 ✅ Funcionalidades
+
   Formulário de Login:
+  
     -Validação de campos obrigatórios (e-mail e senha).
+    
 
   Formulário de Cadastro:
+  
     -Validação completa de nome, e-mail, telefone, data de nascimento, curso, senha e repetição de senha.
+    
     -Mensagens de erro com alert() para orientar o usuário.
   
   Validação feita sem backend, utilizando apenas JavaScript.
