@@ -31,7 +31,7 @@ Este projeto é uma página web simples que simula formulários de login e cadas
   - Validação feita sem backend, utilizando apenas JavaScript.
 
 
-  - Prewiew:
+  - Prewiew do Projeto:
 <img width="1693" height="1118" alt="image" src="https://github.com/user-attachments/assets/405a12e1-c2f4-4d83-9478-38360ff4cda5" />
 
 - Versão com Responsividade Nativa:
