@@ -1,9 +1,11 @@
 Projeto Front-End.
 
 📌 Projeto: Tela de Login e Cadastro
+
 Este projeto é uma página web simples que simula formulários de login e cadastro, com validação de campos feita via JavaScript puro (Vanilla JS). É um ótimo exemplo para iniciantes entenderem a estrutura semântica de HTML, uso básico de CSS e manipulação de formulários com JS.
 
 🖥️ Tecnologias Utilizadas:
+
 -> HTML5;
 -> CSS3;
 -> JavaScript Nativo;
