@@ -1,0 +1,153 @@
+/* Importação do arquivo de variáveis variable.css para o arquivo style.css */
+@import url(variables.css);
+@import url(./mediaQuery.css);
+
+/* ID no CSS é identeificado pelo caracter # (hashtag) */
+/* CLASS no CSS é identeificado pelo caracter . (ponto) */
+
+/* TIPOS DE FORMATAÇÂO NO CSS: */
+/* Formatação por TAG. */
+/* Formatação por ID. */
+/* Formatação por CLASS. */
+/* Formatação por Atributos e Seletores (Avançado - Pré-Processadores -> SASS e LESS). */
+
+/* padding: Margem Interna de todo Elemento HTML */
+/* margin: Margem Externa de todo Elemento HTML*/
+/* border: Borda de todo Elemento HTML */
+
+/* Comandos CSS para Responsividade. */
+/* FlexBox (Flex) - Transforma todo o conteúdo Flexível a ajustes no Display. */
+/* Grid - Transforma todo o Display em uma estrutura de Colunas e Linhas. */
+
+/* Unidade de medida REM - 1rem = 16pixels: Excelente unidade de medida para textos na Responsividade */
+
+li{
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: var(--font-form);
+}
+
+label{
+    margin-bottom: 4px;
+}
+
+#page{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: var(--font-site);
+}
+
+#topo{
+    color: var(--color-font-basic);
+    background-color: var(--backg-header-footer);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 28px;
+}
+
+
+#end{
+    color: var(--color-font-basic);
+    background-color: var(--backg-header-footer);
+    padding: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.img-user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+}
+
+.link-header{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #c4c4c4;
+}
+
+.link-header:hover{
+    color: #00ddff;
+}
+
+.link-header:active{
+    color: #fe2600;
+}
+
+.form-one, .form-two{
+    padding: 22px;
+    box-shadow: 2px 2px 10px #353535;
+    background-color: var(--backg-card-form);
+    border-radius: 8px;
+    opacity: 85%;
+    transition: 0.4s ease;
+    color: var(--color-font-form);
+}
+
+.form-one:hover, .form-two:hover{
+    background-color: var(--backg-card-form);
+    opacity: 100%;
+    transform: scale(1.01);
+}
+
+.camp-login, .camp-cadastro{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.camp-cadastro-obs{
+    height: 95px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    font-family: var(--font-form);
+    font-size: 0.8rem;
+}
+
+.btnAcessar{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f66f5;
+    color: var(--color-font-basic);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnAcessar:hover{
+    background-color: #6a9bff;
+}
+
+.btnCadastrar{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #2b870c;
+    color: var(--color-font-basic);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnCadastrar:hover{
+    background-color: #35d603;
+}
+

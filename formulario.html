@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Login e Cadastro</title>
+</head>
+
+    <!-- A regra semântica para o header é a mesma para o footer! (Regras para SEO) -->
+    <!-- Tanto para o header quando para o footer eu posso trabalhar no máximo 3 sections (para respeitar a semântica)  -->
+    <!-- Posso usar quantas divs eu quiser dentro das sections -->
+
+    <!-- Tag = tudo que está envolto por um sinal de menor e maior "<>" -->
+    <!-- Elemento = tudo que está dentro das tags (Exemplo: header, id, class)  -->
+
+<body id="page">
+    <header id="topo">
+
+        <section class="topo">
+            <img src="./img/user.jpg" alt="Imagem do Usuário" title="Imagem do Usuário" class="img-user">
+        </section>
+
+        <section class="menu">
+            <ul class="align-link">
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank" class="link-header">WhatsApp</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.facebook.com.br" target="_blank" class="link-header">Facebook</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.instagram.com.br" target="_blank" class="link-header">Instagram</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- Dentro do main eu posso utilizar quantas sections eu quiser -->
+    <main id="container">
+        <section class="box-form space">
+            <div class="form-one">
+                <form action="formulario.html" method="GET" name="formLogin" onsubmit="return ValidarCamposFormLogin();">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui..." class="camp-login">
+                    <label>Digite sua Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="camp-login">
+                    <button type="submit" name="btnAcessar" class="btnAcessar">acessar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="box-form">
+            <div class="form-two">
+                <form action="formulario.html" method="GET" name="formCadastro" onsubmit="return ValidarCamposFormCadastro();">
+                    <label>Digite seu Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite aqui..." class="camp-cadastro">
+
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui..." class="camp-cadastro">
+
+                    <label>Digite seu Telefone:</label>
+                    <input type="number" name="tele" id="tele" placeholder="Digite aqui..." class="camp-cadastro">
+
+                    <label>Selecione sua Data de Nascimento:</label>
+                    <input type="date" name="data" id="data" class="camp-cadastro">
+
+                    <label>Selecione o Curso Desejado:</label>
+                    <select name="curso" id="curso" class="camp-cadastro">
+                        <option value="">Selecione...</option>
+                        <option value="0">Design Gráfico</option>
+                        <option value="1">Front-End</option>
+                        <option value="2">Back-End</option>
+                        <option value="3">Banco de Dados</option>
+                    </select>
+
+                    <label>Digite sua Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="camp-cadastro">
+
+                    <label>Repita sua Senha:</label>
+                    <input type="password" name="repSenha" id="repSenha" placeholder="Digite aqui..." class="camp-cadastro">
+
+                    <label>Digite uma Observação (Opcional)</label>
+                    <textarea name="obs" id="obs" placeholder="Digite aqui..." class="camp-cadastro-obs"></textarea>
+
+                    <button type="submit" name="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="end">
+        <section>
+            <div class="copy">
+                <p>Todos os direitos reservados - 2025 WMBarros Treinamento em TI.</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Importação de arquivos Javascript. -->
+    <script src="js/validar.js"></script>
+</body>
+</html>
