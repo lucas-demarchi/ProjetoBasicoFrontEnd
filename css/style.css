@@ -51,6 +51,10 @@ label{
     padding: 28px;
 }
 
+#container{
+    text-align: center;
+}
+
 
 #end{
     color: var(--color-font-basic);
